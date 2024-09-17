@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Birthday</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,300;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Simply Countdown-->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+    <script src="countdown/simplyCountdown.min.js"></script>
+    <!--Bootrab Icon-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section
+      id="hero"
+      class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
+    >
+      <main>
+        <h1>Special Untuk You</h1>
+        <h2>Saevul Jaman</h2>
+        <div class="simply-countdown"></div>
+        <a href="#home" class="btn btn-lg mt-4" onClick="enableScroll()"
+          >Buka</a
+        >
+      </main>
+    </section>
+
+    <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">Saevul</a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Saiful</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Selamat Ulang Tahun Yah</span>
+            <h2>Ucapan" Dari sahabat</h2>
+            <p>
+              Ucapan-ucapan di bawah ini kami sampaikan dengan penuh suka cita
+              buat teman/sahabat kami yang ulang tahun hari ini
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <ul class="timeline">
+              <li>
+                <div
+                  class="timeline-image"
+                  style="background-image: url(img/Verry.jpeg)"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Verry</h3>
+                    <span>Dari MyFriends :</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Semoga tetap hidup dan kaya raya</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div
+                  class="timeline-image"
+                  style="background-image: url(img/lay.jpeg)"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>My Lovely</h3>
+                    <span>Dari Orang Tersayang :</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>HBD yah sayangg, semoga sehat selalu</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="timeline-image"
+                  style="background-image: url(img/apri.jpeg)"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Apri Dw</h3>
+                    <span>Buat Brow Saevul :</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Semoga dengan bertambahnya usia saat ini, semoga selalu
+                      diberikan kesahatan secara fiik maupun mental, and Smoga
+                      apa yang di cita-citakan/di harapkan selalu tercapai!
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div
+                  class="timeline-image"
+                  style="background-image: url(img/zaeandra.jpeg)"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>zaeandra</h3>
+                    <span>Buat Bpk.Saevul :</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Semoga sehat selalu dan bahagia selalu!</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Poto-poto You</span>
+            <h2>Gallery Foto</h2>
+            <p>
+              Foto ini di persembahkan untuk kenang-kenangan dihari ulang tahun
+              kamu.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center"
+        >
+          <div class="col mt-3">
+            <a
+              href="img/gellery/wa1.jpeg"
+              data-toggle="lightbox"
+              data-caption="T.Arya Dan Ria.R 1"
+              data-gallery="mygallery"
+            >
+              <img
+                src="img/gellery/thumbnail/galw1.1.jpeg"
+                alt="Saevul kids"
+                class="img-fluid w-100% rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="img/gellery/wa2.jpeg"
+              data-toggle="lightbox"
+              data-caption="gallery"
+              data-gallery="mygallery"
+              >>
+              <img
+                src="img/gellery/thumbnail/galw2.2.jpeg"
+                alt="gallery"
+                class="img-fluid w-100% rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="img/gellery/wa3.jpeg"
+              data-toggle="lightbox"
+              data-caption="baju adat"
+              data-gallery="mygallery"
+              >>
+              <img
+                src="img/gellery/thumbnail/galw1 (3).jpeg"
+                alt="gallery"
+                class="img-fluid w-100% rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="img/gellery/wa4.jpeg"
+              data-toggle="lightbox"
+              data-caption="gallery"
+              data-gallery="mygallery"
+              >>
+              <img
+                src="img/gellery/thumbnail/galwa4.jpeg"
+                alt="gallery"
+                class="img-fluid w-100% rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="img/gellery/wa5.jpeg"
+              data-toggle="lightbox"
+              data-caption="photo bersama"
+              data-gallery="mygallery"
+              >>
+              <img
+                src="img/gellery/thumbnail/galw5 (2).jpeg"
+                alt="photo bersama"
+                class="img-fluid w-100% rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="img/gellery/wa6.jpeg"
+              data-toggle="lightbox"
+              data-caption="photo bersama"
+              data-gallery="mygallery"
+              >>
+              <img
+                src="img/gellery/thumbnail/glw6.jpeg"
+                alt="photo bersama"
+                class="img-fluid w-100% rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="img/gellery/wa7.jpeg"
+              data-toggle="lightbox"
+              data-caption="gallery"
+              data-gallery="mygallery"
+              >>
+              <img
+                src="img/gellery/thumbnail/galw1 (3).jpeg"
+                alt="gallery"
+                class="img-fluid w-100% rounded"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <small class="block"
+              >&copy; 2024 Brthday_ApriDw. All Rights Reserve.</small
+            >
+            <small class="block"
+              >Design by
+              <a href="https://instagram.com/apri_vpto">
+                @Apri_Darmawanto</a
+              ></small
+            >
+
+            <ul class="mt-3">
+              <li>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-yutube"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-tiktok"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="audio-container">
+      <audio id="song" autoplay loop>
+        <source src="audio/zambrut.mpeg" type="audio/mp3" />
+      </audio>
+
+      <div class="audio-icon-wrapper" style="display: none">
+        <i class="bi bi-disc"></i>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+
+    <script>
+      simplyCountdown(".simply-countdown", {
+        year: 2024, // required
+        month: 9, // required
+        day: 18, // required
+        hours: 0, // Default is 0 [0-23] integer
+        words: {
+          //words displayed into the countdown
+          days: { singular: "hari", plural: "hari" },
+          hours: { singular: "jam", plural: "jam" },
+          minutes: { singular: "menit", plural: "menit" },
+          seconds: { singular: "detik", plural: "detik" },
+        },
+      });
+    </script>
+
+    <script>
+      const stickyTop = document.querySelector(".sticky-top");
+      const offcanvas = document.querySelector(".offcanvas");
+
+      offcanvas.addEventListener("show.bs.offcanvas", function () {
+        stickyTop.style.overflow = "visible";
+      });
+
+      offcanvas.addEventListener("hidden.bs.offcanvas", function () {
+        stickyTop.style.overflow = "hidden";
+      });
+    </script>
+
+    <script>
+      const rootElement = document.querySelector(":root");
+      const audioiconwrapper = document.querySelector(".audio-icon-wrapper");
+      const audioicon = document.querySelector(".audio-icon-wrapper i");
+      const song = document.querySelector("#song");
+      let isPlaying = false;
+
+      function disableScroll() {
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+        window.onscroll = function () {
+          window.scrollTo(scrollTop, scrollLeft);
+        };
+        rootElement.style.scrollBehavior = "auto";
+      }
+
+      function enableScroll() {
+        window.onscroll = function () {};
+        rootElement.style.scrollBehavior = "smooth";
+        //localStorage.setItem('opened', 'true');
+        playAudio();
+      }
+
+      function playAudio() {
+        song.volume = 0.5;
+        audioiconwrapper.style.display = "flex";
+        song.play();
+        isPlaying = true;
+      }
+
+      audioiconwrapper.onclick = function () {
+        if (isPlaying) {
+          song.pause();
+          audioicon.classList.remove("bi-disc");
+          audioicon.classList.add("bi-pause-circle");
+        } else {
+          song.play();
+          audioicon.classList.add("bi-disc");
+          audioicon.classList.remove("bi-pause-circle");
+        }
+
+        isPlaying = !isPlaying;
+      };
+
+      //if(!localStorage.getItem('opened')) {
+      //disableScroll();
+      //}
+      disableScroll();
+    </script>
+
+    <script>
+      window.addEventListener("load", function () {
+        const form = document.getElementById("my-form");
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = e.target.action;
+          fetch(action, {
+            method: "POST",
+            body: data,
+          }).then(() => {
+            alert("Komfirmasi Kehadiran Berhasil Dikirmkan!");
+          });
+        });
+      });
+    </script>
+
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const nama = urlParams.get("n") || "";
+      const pronoun = urlParams.get("p") || "Bapak/Ibu/Saudara/i";
+      const namaContainer = document.querySelector(".hero h4 span");
+      namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ",");
+
+      document.querySelector("#nama").value = nama;
+    </script>
+  </body>
+</html>
